@@ -52,6 +52,10 @@ namespace MU3Input
         
         public bool IsConnected => _openCount > 0;
 
+        
+
+
+
         public byte LeftButton =>
             (byte) (_data.Buttons[0] << 0
                     | _data.Buttons[1] << 1
@@ -77,6 +81,10 @@ namespace MU3Input
 
         public bool Scan => _data.Scan;
         public byte[] AimiId => _data.AimiId;
+
+        public byte TestButton { get; internal set; }
+
+        
 
         public HidIO()
         {
@@ -128,6 +136,7 @@ namespace MU3Input
         {
             23, 19, 22, 20, 21, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6
         };
+        
 
         public unsafe void SetLed(uint data)
         {

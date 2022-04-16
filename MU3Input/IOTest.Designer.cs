@@ -29,6 +29,7 @@ namespace MU3Input
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IOTest));
             this.lA = new System.Windows.Forms.CheckBox();
             this.lB = new System.Windows.Forms.CheckBox();
             this.lC = new System.Windows.Forms.CheckBox();
@@ -40,172 +41,239 @@ namespace MU3Input
             this.rB = new System.Windows.Forms.CheckBox();
             this.rA = new System.Windows.Forms.CheckBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Test3 = new System.Windows.Forms.Button();
+            this.Test2 = new System.Windows.Forms.Button();
+            this.Test1 = new System.Windows.Forms.Button();
             this.btnSetOption = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textAimiId = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lA
             // 
+            this.lA.Appearance = System.Windows.Forms.Appearance.Button;
             this.lA.AutoSize = true;
             this.lA.BackColor = System.Drawing.Color.Black;
-            this.lA.ForeColor = System.Drawing.Color.White;
-            this.lA.Location = new System.Drawing.Point(69, 44);
+            this.lA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lA.ForeColor = System.Drawing.Color.Transparent;
+            this.lA.Location = new System.Drawing.Point(81, 82);
             this.lA.Name = "lA";
-            this.lA.Size = new System.Drawing.Size(30, 16);
+            this.lA.Size = new System.Drawing.Size(21, 22);
             this.lA.TabIndex = 0;
             this.lA.Text = "A";
-            this.lA.UseVisualStyleBackColor = false;
+            this.lA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lA.UseVisualStyleBackColor = true;
+            this.lA.CheckedChanged += new System.EventHandler(this.lA_CheckedChanged);
             // 
             // lB
             // 
+            this.lB.Appearance = System.Windows.Forms.Appearance.Button;
             this.lB.AutoSize = true;
             this.lB.BackColor = System.Drawing.Color.Black;
-            this.lB.ForeColor = System.Drawing.Color.White;
-            this.lB.Location = new System.Drawing.Point(105, 44);
+            this.lB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lB.ForeColor = System.Drawing.Color.Transparent;
+            this.lB.Location = new System.Drawing.Point(120, 82);
             this.lB.Name = "lB";
-            this.lB.Size = new System.Drawing.Size(30, 16);
+            this.lB.Size = new System.Drawing.Size(21, 22);
             this.lB.TabIndex = 1;
             this.lB.Text = "B";
-            this.lB.UseVisualStyleBackColor = false;
+            this.lB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lB.UseVisualStyleBackColor = true;
+            this.lB.CheckedChanged += new System.EventHandler(this.lB_CheckedChanged);
             // 
             // lC
             // 
+            this.lC.Appearance = System.Windows.Forms.Appearance.Button;
             this.lC.AutoSize = true;
             this.lC.BackColor = System.Drawing.Color.Black;
-            this.lC.ForeColor = System.Drawing.Color.White;
-            this.lC.Location = new System.Drawing.Point(141, 44);
+            this.lC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lC.ForeColor = System.Drawing.Color.Transparent;
+            this.lC.Location = new System.Drawing.Point(160, 82);
             this.lC.Name = "lC";
-            this.lC.Size = new System.Drawing.Size(30, 16);
+            this.lC.Size = new System.Drawing.Size(21, 22);
             this.lC.TabIndex = 2;
             this.lC.Text = "C";
-            this.lC.UseVisualStyleBackColor = false;
+            this.lC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lC.UseVisualStyleBackColor = true;
             // 
             // rS
             // 
+            this.rS.Appearance = System.Windows.Forms.Appearance.Button;
             this.rS.AutoSize = true;
-            this.rS.Location = new System.Drawing.Point(392, 35);
+            this.rS.BackColor = System.Drawing.SystemColors.Control;
+            this.rS.Location = new System.Drawing.Point(460, 80);
             this.rS.Name = "rS";
-            this.rS.Size = new System.Drawing.Size(48, 16);
+            this.rS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.rS.Size = new System.Drawing.Size(39, 22);
             this.rS.TabIndex = 3;
             this.rS.Text = "SIDE";
-            this.rS.UseVisualStyleBackColor = true;
+            this.rS.UseVisualStyleBackColor = false;
+            this.rS.CheckedChanged += new System.EventHandler(this.rS_CheckedChanged);
             // 
             // lM
             // 
+            this.lM.Appearance = System.Windows.Forms.Appearance.Button;
             this.lM.AutoSize = true;
-            this.lM.Location = new System.Drawing.Point(69, 22);
+            this.lM.Location = new System.Drawing.Point(30, 41);
             this.lM.Name = "lM";
-            this.lM.Size = new System.Drawing.Size(48, 16);
+            this.lM.Size = new System.Drawing.Size(39, 22);
             this.lM.TabIndex = 4;
             this.lM.Text = "MENU";
             this.lM.UseVisualStyleBackColor = true;
             // 
             // rM
             // 
+            this.rM.Appearance = System.Windows.Forms.Appearance.Button;
             this.rM.AutoSize = true;
-            this.rM.Location = new System.Drawing.Point(338, 22);
+            this.rM.Location = new System.Drawing.Point(442, 41);
             this.rM.Name = "rM";
-            this.rM.Size = new System.Drawing.Size(48, 16);
+            this.rM.Size = new System.Drawing.Size(39, 22);
             this.rM.TabIndex = 9;
             this.rM.Text = "MENU";
             this.rM.UseVisualStyleBackColor = true;
+            this.rM.CheckedChanged += new System.EventHandler(this.rM_CheckedChanged);
             // 
             // lS
             // 
+            this.lS.Appearance = System.Windows.Forms.Appearance.Button;
             this.lS.AutoSize = true;
-            this.lS.Location = new System.Drawing.Point(16, 35);
+            this.lS.Location = new System.Drawing.Point(13, 80);
             this.lS.Name = "lS";
-            this.lS.Size = new System.Drawing.Size(48, 16);
+            this.lS.Size = new System.Drawing.Size(39, 22);
             this.lS.TabIndex = 8;
             this.lS.Text = "SIDE";
-            this.lS.UseVisualStyleBackColor = true;
+            this.lS.UseVisualStyleBackColor = false;
+            this.lS.CheckedChanged += new System.EventHandler(this.lS_CheckedChanged);
             // 
             // rC
             // 
+            this.rC.Appearance = System.Windows.Forms.Appearance.Button;
             this.rC.AutoSize = true;
             this.rC.BackColor = System.Drawing.Color.Black;
-            this.rC.ForeColor = System.Drawing.Color.White;
-            this.rC.Location = new System.Drawing.Point(338, 44);
+            this.rC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rC.ForeColor = System.Drawing.Color.Transparent;
+            this.rC.Location = new System.Drawing.Point(405, 82);
             this.rC.Name = "rC";
-            this.rC.Size = new System.Drawing.Size(30, 16);
+            this.rC.Size = new System.Drawing.Size(21, 22);
             this.rC.TabIndex = 7;
             this.rC.Text = "C";
-            this.rC.UseVisualStyleBackColor = false;
+            this.rC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rC.UseVisualStyleBackColor = true;
+            this.rC.CheckedChanged += new System.EventHandler(this.rC_CheckedChanged);
             // 
             // rB
             // 
+            this.rB.Appearance = System.Windows.Forms.Appearance.Button;
             this.rB.AutoSize = true;
             this.rB.BackColor = System.Drawing.Color.Black;
-            this.rB.ForeColor = System.Drawing.Color.White;
-            this.rB.Location = new System.Drawing.Point(302, 44);
+            this.rB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rB.ForeColor = System.Drawing.Color.Transparent;
+            this.rB.Location = new System.Drawing.Point(368, 82);
             this.rB.Name = "rB";
-            this.rB.Size = new System.Drawing.Size(30, 16);
+            this.rB.Size = new System.Drawing.Size(21, 22);
             this.rB.TabIndex = 6;
             this.rB.Text = "B";
-            this.rB.UseVisualStyleBackColor = false;
+            this.rB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rB.UseVisualStyleBackColor = true;
+            this.rB.CheckedChanged += new System.EventHandler(this.rB_CheckedChanged);
             // 
             // rA
             // 
+            this.rA.Appearance = System.Windows.Forms.Appearance.Button;
             this.rA.AutoSize = true;
             this.rA.BackColor = System.Drawing.Color.Black;
-            this.rA.ForeColor = System.Drawing.Color.White;
-            this.rA.Location = new System.Drawing.Point(266, 44);
+            this.rA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rA.ForeColor = System.Drawing.Color.Transparent;
+            this.rA.Location = new System.Drawing.Point(330, 82);
             this.rA.Name = "rA";
-            this.rA.Size = new System.Drawing.Size(30, 16);
+            this.rA.Size = new System.Drawing.Size(21, 22);
             this.rA.TabIndex = 5;
             this.rA.Text = "A";
-            this.rA.UseVisualStyleBackColor = false;
+            this.rA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rA.UseVisualStyleBackColor = true;
+            this.rA.CheckedChanged += new System.EventHandler(this.rA_CheckedChanged);
             // 
             // trackBar1
             // 
+            this.trackBar1.BackColor = System.Drawing.SystemColors.Window;
+            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Default;
             this.trackBar1.LargeChange = 1;
-            this.trackBar1.Location = new System.Drawing.Point(177, 15);
+            this.trackBar1.Location = new System.Drawing.Point(202, 23);
             this.trackBar1.Maximum = 32767;
             this.trackBar1.Minimum = -32768;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(83, 45);
+            this.trackBar1.Size = new System.Drawing.Size(106, 45);
             this.trackBar1.TabIndex = 12;
             this.trackBar1.TickFrequency = 2000;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 75);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 12);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Status";
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // lblStatus
             // 
+            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(16, 96);
+            this.lblStatus.BackColor = System.Drawing.Color.White;
+            this.lblStatus.Location = new System.Drawing.Point(201, 134);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(77, 12);
+            this.lblStatus.Size = new System.Drawing.Size(107, 12);
             this.lblStatus.TabIndex = 18;
-            this.lblStatus.Text = "Disconnected";
+            this.lblStatus.Text = "Nageki Disconnect";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Test3);
+            this.groupBox1.Controls.Add(this.Test2);
+            this.groupBox1.Controls.Add(this.Test1);
             this.groupBox1.Controls.Add(this.btnSetOption);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textAimiId);
-            this.groupBox1.Location = new System.Drawing.Point(2, 122);
+            this.groupBox1.Location = new System.Drawing.Point(12, 180);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(449, 116);
+            this.groupBox1.Size = new System.Drawing.Size(488, 116);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
             // 
+            // Test3
+            // 
+            this.Test3.Location = new System.Drawing.Point(190, 74);
+            this.Test3.Name = "Test3";
+            this.Test3.Size = new System.Drawing.Size(38, 23);
+            this.Test3.TabIndex = 5;
+            this.Test3.Text = "Both";
+            this.Test3.UseVisualStyleBackColor = true;
+            this.Test3.Click += new System.EventHandler(this.Test3_Click);
+            // 
+            // Test2
+            // 
+            this.Test2.Location = new System.Drawing.Point(108, 74);
+            this.Test2.Name = "Test2";
+            this.Test2.Size = new System.Drawing.Size(75, 23);
+            this.Test2.TabIndex = 4;
+            this.Test2.Text = "Service";
+            this.Test2.UseVisualStyleBackColor = true;
+            this.Test2.Click += new System.EventHandler(this.Test2_Click);
+            // 
+            // Test1
+            // 
+            this.Test1.Location = new System.Drawing.Point(27, 74);
+            this.Test1.Name = "Test1";
+            this.Test1.Size = new System.Drawing.Size(75, 23);
+            this.Test1.TabIndex = 3;
+            this.Test1.Text = "Test";
+            this.Test1.UseVisualStyleBackColor = true;
+            this.Test1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // btnSetOption
             // 
-            this.btnSetOption.Location = new System.Drawing.Point(371, 74);
+            this.btnSetOption.Location = new System.Drawing.Point(415, 74);
             this.btnSetOption.Name = "btnSetOption";
             this.btnSetOption.Size = new System.Drawing.Size(67, 26);
             this.btnSetOption.TabIndex = 2;
@@ -223,19 +291,28 @@ namespace MU3Input
             // 
             // textAimiId
             // 
-            this.textAimiId.Location = new System.Drawing.Point(14, 47);
+            this.textAimiId.Location = new System.Drawing.Point(32, 47);
             this.textAimiId.Name = "textAimiId";
             this.textAimiId.Size = new System.Drawing.Size(424, 21);
             this.textAimiId.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(488, 138);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // IOTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 255);
+            this.ClientSize = new System.Drawing.Size(512, 309);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.rM);
             this.Controls.Add(this.lS);
@@ -247,15 +324,22 @@ namespace MU3Input
             this.Controls.Add(this.lC);
             this.Controls.Add(this.lB);
             this.Controls.Add(this.lA);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "IOTest";
-            this.Text = "Ongeki IO Debug";
-            ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "NAGEKI IO";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.IOTest_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label label1;
@@ -278,8 +362,10 @@ namespace MU3Input
         #endregion
         
         private System.Windows.Forms.TrackBar trackBar1;
-        
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Test2;
+        private System.Windows.Forms.Button Test1;
+        private System.Windows.Forms.Button Test3;
     }
 }

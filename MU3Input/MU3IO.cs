@@ -8,6 +8,7 @@ namespace MU3Input
     {
         internal static HidIO Io;
         private static IOTest _test;
+        public static byte opbtnCache;
 
         [DllExport(ExportName = "mu3_io_get_api_version")]
         public static ushort GetVersion()
@@ -48,7 +49,17 @@ namespace MU3Input
         [DllExport(CallingConvention.Cdecl, ExportName = "mu3_io_get_opbtns")]
         public static void GetOpButtons(out byte opbtn)
         {
-            opbtn = 0;
+            if (Io.TestButton != 0 && Io.TestButton == opbtnCache)
+            {
+                opbtnCache = 0;             //Clear Cache When Equals
+                Io.TestButton = 0;
+                opbtn = 0;
+            }
+            else
+            {
+                opbtn = Io.TestButton;
+            }
+            opbtnCache = Io.TestButton;     //Flush Cache
         }
 
         [DllExport(CallingConvention.Cdecl, ExportName = "mu3_io_get_gamebtns")]

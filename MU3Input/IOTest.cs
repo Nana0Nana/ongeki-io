@@ -10,6 +10,7 @@ namespace MU3Input
 
         private CheckBox[] _left;
         private CheckBox[] _right;
+        bool testDown = false;
 
         public IOTest(HidIO io)
         {
@@ -51,7 +52,7 @@ namespace MU3Input
             {
                 BeginInvoke(new Action(() =>
                 {
-                    lblStatus.Text = _io.IsConnected ? "Connected" : "Disconnected";
+                    lblStatus.Text = _io.IsConnected ? "Nageki Connected" : "Nageki Disconnect";
 
                     if (!_io.IsConnected) return;
 
@@ -118,8 +119,10 @@ namespace MU3Input
                 // ignored
             }
         }
+        
 
-        private void btnSetOption_Click(object sender, EventArgs e)
+
+    private void btnSetOption_Click(object sender, EventArgs e)
         {
             byte[] aimiId;
             
@@ -129,17 +132,121 @@ namespace MU3Input
             }
             catch
             {
-                MessageBox.Show("Invaild id, Id need to be a hex dump of 10 byte data.", "Error");
+                MessageBox.Show("无效卡号，卡号需要20个数字组成.", "错误");
                 return;
             }
             
             if (aimiId.Length != 10)
             {
-                MessageBox.Show("Invaild id, Id need to be a hex dump of 10 byte data.");
+                MessageBox.Show("无效卡号，卡号需要20个数字组成.");
                 return;
             }
             
             _io.SetAimiId(aimiId);
         }
+
+        
+
+        private void lblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rB_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rS_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IOTest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void Test_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Service_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lA_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rA_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            _io.TestButton = 1;
+            return;
+
+        }
+
+        private void rC_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lB_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Test2_Click(object sender, EventArgs e)
+        {
+            _io.TestButton = 2;
+            return;
+        }
+
+        private void Test3_Click(object sender, EventArgs e)
+        {
+            _io.TestButton = 3;
+            return;
+        }
+
+        private void lS_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rM_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

@@ -1,0 +1,239 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "DllExport/1.7.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/_._": {}
+        },
+        "runtime": {
+          "lib/net20/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "DllExport/1.7.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/_._": {}
+        },
+        "runtime": {
+          "lib/net20/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "DllExport/1.7.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/_._": {}
+        },
+        "runtime": {
+          "lib/net20/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "DllExport/1.7.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/_._": {}
+        },
+        "runtime": {
+          "lib/net20/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DllExport/1.7.4": {
+      "sha512": "Uw00IwE/UoJV1faJCasNXpnR3DVa/0dbKjLNS1zNinu4FehQP3y88akvoky1pAjcU6b06cu1BkG9E1IFiV+6xA==",
+      "type": "package",
+      "path": "dllexport/1.7.4",
+      "hasTools": true,
+      "files": [
+        ".gitattributes",
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "3rd-party.txt",
+        "DllExport.bat",
+        "License.txt",
+        "Readme.md",
+        "build_info.txt",
+        "changelog.txt",
+        "dllexport.1.7.4.nupkg.sha512",
+        "dllexport.nuspec",
+        "hMSBuild.bat",
+        "lib/net20/_._",
+        "lib/netstandard1.1/_._",
+        "tools/Conari.dll",
+        "tools/Conari.xml",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.Utilities.v4.0.dll",
+        "tools/Microsoft.Build.dll",
+        "tools/Mono.Cecil.dll",
+        "tools/Mono.Cecil.pdb",
+        "tools/MvsSln.dll",
+        "tools/MvsSln.pdb",
+        "tools/MvsSln.xml",
+        "tools/NSBin.dll",
+        "tools/NSBin.pdb",
+        "tools/PeViewer.exe",
+        "tools/PeViewer.pdb",
+        "tools/RGiesecke.DllExport.MSBuild.dll",
+        "tools/RGiesecke.DllExport.MSBuild.pdb",
+        "tools/RGiesecke.DllExport.dll",
+        "tools/RGiesecke.DllExport.pdb",
+        "tools/coreclr/.version.txt",
+        "tools/coreclr/LICENSE.TXT",
+        "tools/coreclr/PATENTS.TXT",
+        "tools/coreclr/README.md",
+        "tools/coreclr/changelog.txt",
+        "tools/coreclr/clrgc.dll",
+        "tools/coreclr/coreclr.dll",
+        "tools/coreclr/ilasm.exe",
+        "tools/coreclr/ildasm.exe",
+        "tools/coreclr/ildasmrc.dll",
+        "tools/coreclr/mscordaccore.dll",
+        "tools/coreclr/mscordbi.dll",
+        "tools/gnt.bat",
+        "tools/hMSBuild.bat",
+        "tools/init.ps1",
+        "tools/net.r_eg.DllExport.Wizard.dll",
+        "tools/net.r_eg.DllExport.Wizard.pdb",
+        "tools/net.r_eg.DllExport.Wizard.targets",
+        "tools/net.r_eg.DllExport.targets",
+        "tools/raw/lib/net20/DllExport.dll",
+        "tools/raw/lib/net20/DllExport.xml",
+        "tools/raw/lib/netstd/DllExport.dll",
+        "tools/raw/lib/netstd/DllExport.xml"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "DllExport >= 1.7.4",
+      "Newtonsoft.Json >= 13.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\23916\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "I:\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
+      "projectName": "MU3Input",
+      "projectPath": "I:\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
+      "packagesPath": "C:\\Users\\23916\\.nuget\\packages\\",
+      "outputPath": "I:\\ongeki-io-develop\\MU3Input\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\23916\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "DllExport": {
+            "target": "Package",
+            "version": "[1.7.4, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1NkGYZPSR26WWe9xWLz0SO39LigI93dOY57N7+c539Ut6CxJJ4+S7O9GEIcvwWjsAhCOWHPElBFkdqM5LdBzSw==",
+  "success": true,
+  "projectFilePath": "I:\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\23916\\.nuget\\packages\\dllexport\\1.7.4\\dllexport.1.7.4.nupkg.sha512",
+    "C:\\Users\\23916\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
