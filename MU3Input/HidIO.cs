@@ -74,8 +74,10 @@ namespace MU3Input
         {
             get
             {
-                var value = Math.Pow(_data.Lever / 1023.0, 0.4545) - 0.5;
-                return (short) (value * 32766);
+                //var value = Math.Pow(_data.Lever / 1023.0, 0.4545) - 0.5;
+                //return (short) (value * 32766);
+                //return (short)(_data.Lever * 32.0 - 16382);
+                return (short)(_data.Lever * 32.0 - 16382);
             }
         }
 

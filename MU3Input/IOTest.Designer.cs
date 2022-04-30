@@ -43,6 +43,7 @@ namespace MU3Input
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.lblStatus = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Test3 = new System.Windows.Forms.Button();
             this.Test2 = new System.Windows.Forms.Button();
             this.Test1 = new System.Windows.Forms.Button();
@@ -205,8 +206,8 @@ namespace MU3Input
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Default;
             this.trackBar1.LargeChange = 1;
             this.trackBar1.Location = new System.Drawing.Point(202, 23);
-            this.trackBar1.Maximum = 32767;
-            this.trackBar1.Minimum = -32768;
+            this.trackBar1.Maximum = 25000;
+            this.trackBar1.Minimum = -25000;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(106, 45);
             this.trackBar1.TabIndex = 12;
@@ -219,15 +220,16 @@ namespace MU3Input
             this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(201, 134);
+            this.lblStatus.Location = new System.Drawing.Point(216, 131);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(107, 12);
+            this.lblStatus.Size = new System.Drawing.Size(83, 12);
             this.lblStatus.TabIndex = 18;
-            this.lblStatus.Text = "Nageki Disconnect";
+            this.lblStatus.Text = "Nageki 未连接";
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.Test3);
             this.groupBox1.Controls.Add(this.Test2);
             this.groupBox1.Controls.Add(this.Test1);
@@ -239,7 +241,18 @@ namespace MU3Input
             this.groupBox1.Size = new System.Drawing.Size(488, 116);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Options";
+            this.groupBox1.Text = "设置";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(154, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(185, 12);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Set 设置卡号，长按两个menu刷卡";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Test3
             // 
@@ -291,10 +304,16 @@ namespace MU3Input
             // 
             // textAimiId
             // 
-            this.textAimiId.Location = new System.Drawing.Point(32, 47);
+            this.textAimiId.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textAimiId.Location = new System.Drawing.Point(45, 44);
+            this.textAimiId.MaxLength = 20;
             this.textAimiId.Name = "textAimiId";
             this.textAimiId.Size = new System.Drawing.Size(424, 21);
             this.textAimiId.TabIndex = 0;
+            this.textAimiId.Text = "输入您的AimeID（20位数字）\r\n";
+            this.textAimiId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textAimiId.WordWrap = false;
+            this.textAimiId.TextChanged += new System.EventHandler(this.textAimiId_TextChanged);
             // 
             // pictureBox1
             // 
@@ -367,5 +386,6 @@ namespace MU3Input
         private System.Windows.Forms.Button Test2;
         private System.Windows.Forms.Button Test1;
         private System.Windows.Forms.Button Test3;
+        private System.Windows.Forms.Label label2;
     }
 }

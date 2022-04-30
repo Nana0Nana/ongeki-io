@@ -11,6 +11,7 @@ namespace MU3Input
         private CheckBox[] _left;
         private CheckBox[] _right;
         bool testDown = false;
+        private object _data;
 
         public IOTest(HidIO io)
         {
@@ -52,15 +53,25 @@ namespace MU3Input
             {
                 BeginInvoke(new Action(() =>
                 {
-                    lblStatus.Text = _io.IsConnected ? "Nageki Connected" : "Nageki Disconnect";
+                    lblStatus.Text = _io.IsConnected ? "Nageki 已连接" : "Nageki 未连接";
 
                     if (!_io.IsConnected) return;
 
                     for (var i = 0; i < 5; i++)
                     {
-                        _left[i].Checked = Convert.ToBoolean(_io.Data.Buttons[i]);
-                        _right[i].Checked = Convert.ToBoolean(_io.Data.Buttons[i + 5]);
+                        if (i == 3)
+                        {
+                            _left[i].Checked = (Convert.ToBoolean(_io.Data.Buttons[i]));
+                            _right[i].Checked = (Convert.ToBoolean(_io.Data.Buttons[i + 5]));
+                        }
+                        else
+                        {
+                            _left[i].Checked = Convert.ToBoolean(_io.Data.Buttons[i]);
+                            _right[i].Checked = Convert.ToBoolean(_io.Data.Buttons[i + 5]);
+                        }
+
                     }
+
 
                     trackBar1.Value = _io.Lever;
 
@@ -141,7 +152,13 @@ namespace MU3Input
                 MessageBox.Show("无效卡号，卡号需要20个数字组成.");
                 return;
             }
-            
+
+            if (aimiId.Length != 20)
+            {
+                MessageBox.Show("已写入卡号，请长按两个menu刷卡.");
+                return;
+            }
+
             _io.SetAimiId(aimiId);
         }
 
@@ -247,6 +264,25 @@ namespace MU3Input
         {
 
         }
-        
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textAimiId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
