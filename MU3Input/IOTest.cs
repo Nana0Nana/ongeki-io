@@ -12,6 +12,7 @@ namespace MU3Input
         private CheckBox[] _right;
         bool testDown = false;
         private object _data;
+        private int ncoins;
 
         public IOTest(HidIO io)
         {
@@ -56,6 +57,7 @@ namespace MU3Input
                     lblStatus.Text = _io.IsConnected ? "Nageki 已连接" : "Nageki 未连接";
 
                     if (!_io.IsConnected) return;
+                    
 
                     for (var i = 0; i < 5; i++)
                     {
@@ -136,7 +138,7 @@ namespace MU3Input
     private void btnSetOption_Click(object sender, EventArgs e)
         {
             byte[] aimiId;
-            
+            MessageBox.Show("已写入卡号，请长按menu刷卡.");
             try
             {
                 aimiId = StringToByteArray(textAimiId.Text);
@@ -150,12 +152,6 @@ namespace MU3Input
             if (aimiId.Length != 10)
             {
                 MessageBox.Show("无效卡号，卡号需要20个数字组成.");
-                return;
-            }
-
-            if (aimiId.Length != 20)
-            {
-                MessageBox.Show("已写入卡号，请长按两个menu刷卡.");
                 return;
             }
 
@@ -283,6 +279,36 @@ namespace MU3Input
         private void button1_Click_2(object sender, EventArgs e)
         {
             
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Aime_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.FromArgb(0, 0, 0);
         }
     }
 }

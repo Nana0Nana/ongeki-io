@@ -1,0 +1,12 @@
+I:\ongeki-io-develop\MU3Input\bin\x64\Release\MU3Input.dll
+I:\ongeki-io-develop\MU3Input\bin\x64\Release\MU3Input.pdb
+I:\ongeki-io-develop\MU3Input\bin\x64\Release\Newtonsoft.Json.dll
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.IOTest.resources
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.Properties.Resources.resources
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.csproj.GenerateResource.cache
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.csproj.CoreCompileInputs.cache
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.csproj.CopyComplete
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.dll
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.pdb
+I:\ongeki-io-develop\MU3Input\obj\x64\Release\MU3Input.csprojAssemblyReference.cache
+I:\ongeki-io-develop\MU3Input\bin\x64\Release\MU3Input.dll.config

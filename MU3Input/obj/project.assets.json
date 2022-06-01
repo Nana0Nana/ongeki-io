@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
+      "projectUniqueName": "I:\\nageki\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
       "projectName": "MU3Input",
-      "projectPath": "I:\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
+      "projectPath": "I:\\nageki\\ongeki-io-develop\\MU3Input\\MU3Input.csproj",
       "packagesPath": "C:\\Users\\23916\\.nuget\\packages\\",
-      "outputPath": "I:\\ongeki-io-develop\\MU3Input\\obj\\",
+      "outputPath": "I:\\nageki\\ongeki-io-develop\\MU3Input\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
